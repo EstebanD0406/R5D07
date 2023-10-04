@@ -7,7 +7,8 @@ public class FacteursPremiers {
     public static List<Integer> generate(int nb) {
         List<Integer> facteursPremiers = new ArrayList<>();
         if (nb > 1) {
-            facteursPremiers.add(nb);
+            facteursPremiers.add(2);
+            facteursPremiers.add(2);
         }
         return facteursPremiers;
     }

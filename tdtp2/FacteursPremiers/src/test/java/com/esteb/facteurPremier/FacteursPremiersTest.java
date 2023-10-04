@@ -39,57 +39,51 @@ class FacteursPremiersTest {
         //THEN
         assertThat(actualList).isEqualTo(expectedList);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
     @Test
-    void testGenerateNbPremier() {
-        assertThat(FacteursPremiers.generate(2), contains(2));
+    void testGenerate4() {
+        //GIVEN
+        int nb = 4;
+        expectedList.add(2);
+        expectedList.add(2);
+        //WHEN
+        actualList = facteurP.generate(nb);
+        //THEN
+        assertThat(actualList).isEqualTo(expectedList);
     }
-
     @Test
-    void testGenerateProduit2() {
-        assertThat(FacteursPremiers.generate(6), contains(2, 3));
+    void testGenerate6() {
+        //GIVEN
+        int nb = 6;
+        //WHEN
+        actualList = facteurP.generate(nb);
+        //THEN
+        assertThat(actualList).isEqualTo(expectedList);
     }
-
     @Test
-    void testGenerateProduit3identique() {
-        assertThat(FacteursPremiers.generate(8), contains(2, 2, 2));
+    void testGenerate8() {
+        //GIVEN
+        int nb = 8;
+        //WHEN
+        actualList = facteurP.generate(nb);
+        //THEN
+        assertThat(actualList).isEqualTo(expectedList);
     }
-
     @Test
-    void testGenerateProduit3() {
-        assertThat(FacteursPremiers.generate(12), contains(2, 2, 3));
+    void testGenerate9() {
+        //GIVEN
+        int nb = 9;
+        //WHEN
+        actualList = facteurP.generate(nb);
+        //THEN
+        assertThat(actualList).isEqualTo(expectedList);
     }
-
     @Test
-    void testGenerateNbRepete() {
-        assertThat(FacteursPremiers.generate(18), contains(2, 3, 3));
+    void testGenerate1001() {
+        //GIVEN
+        int nb = 1001;
+        //WHEN
+        actualList = facteurP.generate(nb);
+        //THEN
+        assertThat(actualList).isEqualTo(expectedList);
     }
-
-    @Test
-    void testGenerateNbGrand() {
-        assertThat(FacteursPremiers.generate(1001), contains(7, 11, 13));
-    }
- */
 }
