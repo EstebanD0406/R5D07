@@ -29,7 +29,16 @@ class FacteursPremiersTest {
         assertThat(actualList).isEqualTo(expectedList);
     }
 
-
+    @Test
+    void testGenerate2() {
+        //GIVEN
+        int nb = 2;
+        expectedList.add(2);
+        //WHEN
+        actualList = facteurP.generate(nb);
+        //THEN
+        assertThat(actualList).isEqualTo(expectedList);
+    }
 
 
 
