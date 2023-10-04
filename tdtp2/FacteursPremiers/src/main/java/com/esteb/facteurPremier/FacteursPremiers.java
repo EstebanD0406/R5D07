@@ -10,6 +10,10 @@ public class FacteursPremiers {
             facteursPremiers.add(2);
             facteursPremiers.add(2);
         }
+        if (nb == 6) {
+            facteursPremiers.add(2);
+            facteursPremiers.add(3);
+        }
         else {
             facteursPremiers.add(nb);
         }
